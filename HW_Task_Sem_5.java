@@ -34,9 +34,7 @@ abstract class Array {
     public static String findEqualsSubarray(int[] firstArray, int[] secondArray) {
         List<Integer> result = new ArrayList<>();
         int counter = 0;
-
-        long timeStart = System.currentTimeMillis();
-
+        
         for (int startIndex = 0; startIndex <= firstArray.length; startIndex++) {
             for (int endIndex = startIndex + 1; endIndex <= firstArray.length; endIndex++) {
                 int[] tempSubarray = Arrays.copyOfRange(firstArray, startIndex, endIndex);
